@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Unsubscribe</title>
+</head>
+<body>
+<div align="center">
+    <h1>Unsubscribe</h1>
+    <form action="#" th:action="@{/demo/unsubscribe}" method="get" th:object="${subscription}">
+        <label>E-mail:</label>
+        <input type="text" field="*{email}" name="email" /><br/>
+        <br></br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
